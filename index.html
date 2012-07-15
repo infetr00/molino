@@ -48,29 +48,32 @@ header {margin-top:40px;}
 				
 				<div id="contenedor-pagina-en-blanco">
 					<div class="row">
-						<div class="span3">
-							<img src="img/molino_icono_220.png" style="border-radius: 6px;">
+						<div class="span2">
+							<img src="img/molino_icono_250.png" style="border-radius: 6px;">
 							<!--Barra de navegacion-->
 				        	<nav>
 				            	<ul class="nav nav-pills nav-stacked">
 				                	<li class="active"><a href="#">Inicio</a></li>
-				                	<li><a href="#">Hospedaje</a></li>
-									<li><a href="#">Comida</a></li>
-									<li><a href="#">Alrededores</a></li>
-									<li><a href="#">Reservar</a></li>
-									<li><a href="#">Cómo llegar</a></li>
+				                	<li><a href="javascript:void(0)" onClick="goToByScroll('seccion_alojamiento')">Hospedaje</a></li>
+									<li><a href="javascript:void(0)" onClick="goToByScroll('section_casaron')">Comida</a></li>
+									<li><a href="javascript:void(0)" onClick="goToByScroll('section_alrededores')">Alrededores</a></li>
+									<li><a href="javascript:void(0)" onClick="goToByScroll('section_pie')">Reservar</a></li>
+									<li><a href="javascript:void(0)" onClick="goToByScroll('section_pie')">Cómo llegar</a></li>
 				            	</ul>
 				        	</nav>	
 						</div>
 					
 						<!--Carrousel-->
-						<section id="carrousel-de-fotos" class="span9">
-				    		<div id="myCarousel" class="carousel" style>
+						<section id="carrousel-de-fotos" class="span10">
+				    		<div id="myCarousel" class="carousel slide">
 								<!-- Carousel items -->
 						  		<div class="carousel-inner">
-									<div class="active item"><img src="img/car1.jpeg"></div>
-									<div class="item"><img src="img/car2.jpg"></div>
-									<div class="item"><img src="img/car3.jpg"></div>
+									<div class="active item"><img src="img/carou_ini_1.png"></div>
+									<div class="item"><img src="img/carou_ini_2.png"></div>
+									<div class="item"><img src="img/carou_ini_3.png"></div>
+									<div class="item"><img src="img/carou_ini_4.png"></div>
+									<div class="item"><img src="img/carou_ini_5.png"></div>
+									<div class="item"><img src="img/carou_ini_6.png"></div>
 								</div>
 								<!-- Carousel nav -->
 								<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
@@ -81,9 +84,9 @@ header {margin-top:40px;}
 		
 				
 					<!--Mensaje de bienvenida Molino-->
-					<div class="row">
+					<div id="seccion_alojamiento" class="row">
 						<section class="span12">
-							<h1 style="text-align:center">Molino Badalejos, vacaciones en el sur de cádiz</h1>
+							<h1>Molino Badalejos, vacaciones en el sur de cádiz</h1>
 							
 							<h3 id="texto-descripcion">Un precioso molino antiguo restaurado y reconvertido en una casa rural. Situada en un
 								 magnífico valle perfectamente comunicado con toda la costa de la provincia de Cádiz. Un lugar perfecto para conocer
@@ -91,7 +94,7 @@ header {margin-top:40px;}
 							</h3>
 						
 							<div class="row" style="margin-top:15px">
-								<div class="span3"><img src="img/piscina_relieve.png" alt="Activities"></div>
+								<div class="span3"><img src="img/habita1.png" alt="Activities"></div>
 								<div class="span9"><h3>El molino consta de 5 habitaciones  dobles independientes, ideales
 									 tanto en temporada de invierno como de verano ya que todas ellas están dotadas de chimenea y piscina. Esto 
 									permite que la estancia sea agradable en cualquier época del año.<br/>
@@ -111,7 +114,7 @@ header {margin-top:40px;}
 					
 					
 					<!--Mensaje de bienvenida Venta Casarón-->	
-					<div class="row">
+					<div id="section_casaron"class="row">
 						<div class="span5">
 							<h1>Venta el Casarón, la cocina del campo</h1>
 							<h3 id="texto-descripcion">Situado a 100 metros del molino, un lugar singular tanto por su estética como por su cocina.</h3>
@@ -119,18 +122,19 @@ header {margin-top:40px;}
 						<div class="span7"><img src="img/huevos_relieve.png">
 						</div>
 					</div>
+					
 					<div class="row">
-						<section class="span12">
-							<h3>Ubicado en una casa construida como las tradicionales de la zona con gruesos muros de piedra y techo
+						<div class="span8">
+							<h4>Ubicado en una casa construida como las tradicionales de la zona con gruesos muros de piedra y techo
 								 realizado con cañas. Cuenta con un salón interior, presidido por una chimenea y dos terrazas, una
-								 cubierta y otra en un patio rodeada de cesped además una zona de visita al huerto y a la granja 
-							</h3>
-							<h3>
+								 cubierta y otra en un patio rodeada de cesped además una zona de visita al huerto y a la granja. 
+							</h4>
+							<h4>
 								La cocina es muy singular y se aparta de la habitual en las ventas. Así hay una curiosa mezcla
 								 entre cocina internacional, cocina gallega y cocina autóctona fruto del ingenio y la sapiencia de
 								 Enrique Torres, un marino e ingeniero que decidió convertir en su profesión su afición de toda la vida, la cocina. 
-							</h3> 
-							<h3>
+							</h4> 
+							<h4>
 								De que todo salga bien en los comedores se encarga su socio Pedro Cepero, un magnífico
 								 maestro de ceremonias que, además, cultiva, en la trasera de la venta verduras y gallinas
 								 que luego servirán para elaborar los singulares platos de Enrique.<br/> 
@@ -139,8 +143,26 @@ header {margin-top:40px;}
 							carne con  guarnición de tomate de frito, callos con garbanzos, pollo mejicano, surtido de postres de
 							 la casa y tarta de manzana y ciruela. Venta Casarón es un restaurante basado en una mezcla de recetas
 							 Gallegas y Gaditanas donde la base fundamental de su cocina es los productos de alta calidad
-							</h3>						
-						</section>
+							</h4>						
+						</div>
+						<div class="span4">
+							<div class="row">
+								<div class="span2">
+									<img src="img/venta1.png"/>
+								</div>
+								<div class="span2">
+									<img src="img/venta2.png"/>
+								</div>
+							</div>	
+							<div class="row">
+								<div class="span2">
+									<img src="img/venta4.png"/>
+								</div>
+								<div class="span2">
+									<img src="img/venta3.png"/>
+								</div>
+							</div>
+						</div>
 					</div>
 				
 				
@@ -154,7 +176,7 @@ header {margin-top:40px;}
 				
 			
 				<!--Seccion Alrededores-->
-				<div class="row">
+				<div id="section_alrededores"class="row">
 					<div class="span12">
 						<h2>Alrededores</h2>	
 					</div>	
@@ -243,7 +265,7 @@ header {margin-top:40px;}
 				
 				
 				<!--Pie de pagina-->
-				<div class="row">
+				<div id="section_pie" class="row">
 					<div class="span3">
 							<div id="c_f7507260b67e7e40fc05db62044d3f93" class="alto"><h2 style="color: #000000; margin: 0 0 3px; padding: 2px; font: bold 13px/1.2 Verdana; text-align: center;">Prevision tiempo Medina-Sidonia</h2></div><script type="text/javascript" src="http://www.eltiempo.es/widget/widget_loader/f7507260b67e7e40fc05db62044d3f93"></script>
 					</div>
@@ -255,12 +277,12 @@ header {margin-top:40px;}
 					
 					<div class="span3">	
 						<h2>Alojamiento y comida</h2>
-						<p>Ctra. Laujar-Orgiva Km. 1.6, Laujar de Andarax<br>
-						Almería - Andalucía - España<br>
-						Tel: 950 513 514<br>
-						Fax: 950 513 561<br>
-						info@hotelalmirez.es<br>
+						<p>Carretera Medina – Benalup, km 3 ( Los Badalejos ) - Cádiz - Andalucía - España<br>
+						<strong>Reservas en Tel: 956 417 025</strong><br>
 						</p>
+						<h2>Precios</h2>
+						<p>T.alta 60 euros habitación doble</p>
+						<p>T.baja 40 euros hebitación doble</p>
 					</div>
 					
 					<div class="span3">	
@@ -284,6 +306,22 @@ header {margin-top:40px;}
 		    </footer>
 		</div>
 </div>
+
+<!-- javascript-->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/bootstrap-transition.js"></script>
+<script type="text/javascript" src="js/bootstrap-carousel.js"></script>
+<script>
+$(function() {
+  $('.carousel').carousel();
+});
+</script>
+
+<script>
+function goToByScroll(id){
+     			$('html,body').animate({scrollTop: $("#"+id).offset().top},'slow');
+		}
+</script>
 
 </body>
 </html>
