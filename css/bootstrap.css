@@ -3246,7 +3246,7 @@ a.thumbnail:hover {
 }
 .carousel-inner {
   overflow: hidden;
-  width: 100%;
+  width: 780px;
   position: relative;
 }
 .carousel .item {
